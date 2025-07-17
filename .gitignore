@@ -1,0 +1,17 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SLAM map files
+maps/*.pgm
+maps/*.yaml
+
+# IDE/editor files
+.vscode/
+.DS_Store
+*.swp

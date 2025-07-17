@@ -1,0 +1,3 @@
+int32 decision_state
+float32 angular_error
+float32 correction

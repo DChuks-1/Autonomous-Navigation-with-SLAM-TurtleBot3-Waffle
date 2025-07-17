@@ -1,0 +1,25 @@
+# config/params.yaml
+
+lidar:
+  min_range:   0.12    # ignore anything closer
+  max_range:   3.5     # ignore beyond this
+  smoothing:     3     # window size for rolling average
+
+decision:
+  safe_distance:    0.5   # m
+  sector_front:  [-15, 15]
+  sector_left:   [ 15, 45]
+  sector_right:  [-45,-15]
+  around_speed:   0.25  # fraction of full speed
+
+exploration:
+  map_topic:    "map"
+  frontier_min_size: 30    # cells
+  plan_cycle:        5.0   # seconds between replans
+  linear_vel:       0.2    # m/s when following
+  angular_vel:      0.5    # rad/s when turning
+
+map_saver:
+  save_interval:   30.0    # seconds
+  output_dir:    "maps"
+  basename:   "arena_map"
